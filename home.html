@@ -6,24 +6,24 @@
     <title>home</title>
 </head>
 <body>
-   
-     <h1 class="text-3xl text-center mt-12">Your account details 
+       
+      <h1 class="text-3xl text-center mt-12">Your account details
         <span class="text-red-400 font-semibold">showing below!</span></h1>
 
        <section class="grid md:grid-cols-3 grid-cols-1 gap-4 mt-12 container mx-auto">
          <div class="bg-green-100 p-8 rounded shadow-lg">
             <p class="text-2xl">Deposit</p>
-            <p class="text-4xl">$00</p>
+            <p class="text-4xl">$<span id="depositamount">00</span></p>
          </div>
 
          <div class="bg-red-100 p-8 rounded shadow-lg">
             <p class="text-2xl">Withdraw</p>
-            <p class="text-4xl">$00</p>
+            <p class="text-4xl">$<span id="withdrawamount">00</span></p>
          </div>
 
          <div class="bg-purple-100 p-8 rounded shadow-lg">
             <p class="text-2xl">Total balance</p>
-            <p class="text-4xl">$00</p>
+            <p class="text-4xl">$<span id="total_balance">1400</span></p>
          </div>
        </section>
 
@@ -32,15 +32,15 @@
        <section class="mt-16 grid grid-cols-2 container mx-auto gap-4">
          <div class="bg-blue-200 rounded shadow-lg p-8">
             <p class="text-2xl">Please Deposit</p>
-            <input class=" block border-2 my-4 p-2 w-1/2 rounded" type="number" id="" placeholder="$$">
-              <button id="loginbutton" class="inline-block text-2xl bg-red-400 px-3 py-2 text-white rounded hover:bg-red-500 ">Deposit</button>
+            <input class=" block border-2 my-4 p-2 w-1/2 rounded" type="number" id="depositinput" placeholder="$$">
+              <button id="Depositbutton" class="inline-block text-2xl bg-red-400 px-3 py-2 text-white rounded hover:bg-red-500 ">Deposit</button>
           </div>
          </div>
 
            <div class="bg-cyan-200 rounded shadow-lg p-8">
             <p class="text-2xl">Please Withdraw</p>
-            <input class="block border-2 my-4 p-2 w-1/2 rounded" type="number" id="" placeholder="$$">
-              <button id="loginbutton" class="inline-block text-2xl bg-red-400 px-3 py-2 text-white rounded hover:bg-red-500 ">Withdraw</button>
+            <input class="block border-2 my-4 p-2 w-1/2 rounded" type="number" id="withdrawinput" placeholder="$$">
+              <button id="withdrawbutton" class="inline-block text-2xl bg-red-400 px-3 py-2 text-white rounded hover:bg-red-500 ">Withdraw</button>
           </div>
          </div>
       
@@ -52,8 +52,11 @@
 
 
 
-
+    <!--Tailwind CDN Link-->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Cuatom js link-->
+    <script src="js/home.js"></script>
    
 </body>
 </html>
